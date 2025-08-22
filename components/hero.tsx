@@ -41,7 +41,7 @@ export default function Hero() {
               Digital Innovation
             </span>
 
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-b from-sky-800/60 dark:from-sky-100/60 to-foreground bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-b from-sky-800/10 dark:from-sky-100/10 to-foreground bg-clip-text text-transparent">
               Building the Future
             </h1>
 
