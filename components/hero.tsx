@@ -29,16 +29,13 @@ export default function Hero() {
             className="flex flex-col justify-center items-center space-y-5 max-w-4xl mx-auto text-center"
           >
             <span className="w-fit h-full text-sm bg-card px-2 py-1 border border-border rounded-full">
-              Pioneering Digital Innovation
+              Digital Innovation
             </span>
             <h1 className="text-4xl font-medium tracking-tighter mx-auto md:text-6xl text-pretty bg-gradient-to-b from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground bg-clip-text text-transparent">
-              Shaping the Digital Landscape with Cutting-Edge Innovation
+              Building the Future
             </h1>
             <p className="max-w-2xl text-lg mx-auto text-muted-foreground text-balance">
-              Discover Ekilie&apos;s suite of advanced digital solutions
-              designed to transform tomorrow&apos;s technology. From intelligent
-              sensing to seamless communication, we pioneer innovations that
-              drive the future.
+              Ekilie creates smart digital solutions for tomorrow.
             </p>
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -53,13 +50,9 @@ export default function Hero() {
                 onOpenChange={onOpenChange}
               >
                 <ModalContent>
-                  <ModalHeader>Ekilie Solutions</ModalHeader>
+                  <ModalHeader>Our Solutions</ModalHeader>
                   <ModalBody>
-                    We are pioneers in digital innovation, developing
-                    cutting-edge solutions including ekiliSense, ekiliRelay,
-                    ekiliConvo, and comprehensive Insights platforms. Our
-                    mission is to shape the future of technology through
-                    intelligent design and forward-thinking solutions.
+                    Ekilie delivers smart platforms for sensing, communication, and insights.
                   </ModalBody>
                   <ModalFooter>
                     <Button
@@ -67,6 +60,7 @@ export default function Hero() {
                       href="#products"
                       color="primary"
                       variant="solid"
+                      on={onOpenChange}
                       size="sm"
                     >
                       Discover Products
