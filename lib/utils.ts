@@ -53,7 +53,7 @@ export const products = [
       "Scalable architecture",
       "Reliable connectivity",
     ],
-    isFeatured: true,
+    isFeatured: false,
   },
   {
     name: "ekiliConvo",

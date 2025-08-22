@@ -41,7 +41,7 @@ export default function NavBar() {
             href="/"
             className="font-light tracking-tighter text-inherit text-lg"
           >
-            Ekilie
+            ekilie
           </a>
         </NavbarBrand>
       </NavbarContent>
@@ -51,7 +51,7 @@ export default function NavBar() {
             href="/"
             className="font-light tracking-tighter text-2xl flex gap-3 justify-center items-center"
           >
-            Ekilie
+            ekilie
           </a>
         </NavbarBrand>
         <NavbarItem>
