@@ -1,34 +1,8 @@
 "use client";
+import { testimonials } from "@/lib/utils";
 import { motion } from "framer-motion";
 
 export default function Testimonials() {
-  const testimonials = [
-    {
-      name: "Sarah Chen",
-      role: "CEO at TechStart",
-      avatar: "https://i.pravatar.cc/150?img=1",
-      content:
-        "This platform has transformed how we manage our business. The analytics features alone have saved us countless hours and improved our decision-making process significantly.",
-      rating: 5,
-    },
-    {
-      name: "Marcus Rodriguez",
-      role: "Product Manager at Scale Co",
-      avatar: "https://i.pravatar.cc/150?img=3",
-      content:
-        "The integration capabilities are outstanding. We were able to connect all our existing tools seamlessly. The customer support team is also incredibly responsive and helpful.",
-      rating: 5,
-    },
-    {
-      name: "Emma Thompson",
-      role: "CTO at DataFlow",
-      avatar: "https://i.pravatar.cc/150?img=5",
-      content:
-        "Security was our main concern when choosing a platform, and this solution exceeded our expectations. The encryption and compliance features give us complete peace of mind.",
-      rating: 5,
-    },
-  ];
-
   const StarIcon = () => (
     <svg
       className="w-4 h-4 text-yellow-500"

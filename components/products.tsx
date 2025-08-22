@@ -3,54 +3,9 @@ import { Card, CardBody, CardFooter } from "@heroui/card";
 import { Button } from "@heroui/button";
 import { Divider } from "@heroui/divider";
 import { motion } from "framer-motion";
+import { products } from "@/lib/utils";
 
 export default function Products() {
-  const products = [
-    {
-      name: "ekiliSense",
-      desc: "Advanced sensing and monitoring solutions",
-      features: [
-        "Real-time data collection",
-        "Intelligent analytics",
-        "Actionable insights",
-        "Seamless integration",
-      ],
-      isFeatured: false,
-    },
-    {
-      name: "ekiliRelay",
-      desc: "Seamless communication and relay systems",
-      features: [
-        "High-performance relay",
-        "Modern digital infrastructure",
-        "Scalable architecture",
-        "Reliable connectivity",
-      ],
-      isFeatured: true,
-    },
-    {
-      name: "ekiliConvo",
-      desc: "Intelligent conversation platforms",
-      features: [
-        "Enhanced user engagement",
-        "Smart interaction design",
-        "Multi-platform support",
-        "Advanced conversation flow",
-      ],
-      isFeatured: false,
-    },
-    {
-      name: "Insights",
-      desc: "Comprehensive analytics and insights",
-      features: [
-        "Data-driven decision making",
-        "Advanced visualization",
-        "Custom reporting",
-        "Predictive analytics",
-      ],
-      isFeatured: false,
-    },
-  ];
 
   return (
     <motion.section
