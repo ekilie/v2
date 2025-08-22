@@ -7,7 +7,7 @@ import ColourfulText from "@/components/ui/colourful-text";
 export function Philosophy() {
   return (
     <section id="philosophy" className="py-24 px-4">
-      <h1 className="text-2xl mb-6 md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
+      <h1 className="text-2xl mb-6 md:text-5xl lg:text-7xl font-bold text-center relative z-2 font-sans">
         Our <ColourfulText text="Philosophy" /> <br />
       </h1>
       <div className="max-w-6xl mx-auto">
