@@ -12,7 +12,7 @@ export default function Home() {
     <main className="flex flex-col min-h-dvh">
       <NavBar />
       <Hero />
-      <Partners />
+      {/* <Partners /> */}
       <Testimonials />
       <Stats />
       <Products />
