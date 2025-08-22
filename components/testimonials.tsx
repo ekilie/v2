@@ -27,62 +27,6 @@ export default function Testimonials() {
         "Security was our main concern when choosing a platform, and this solution exceeded our expectations. The encryption and compliance features give us complete peace of mind.",
       rating: 5,
     },
-    {
-      name: "Robert Taylor",
-      role: "CTO at FinanceFlow",
-      avatar: "https://i.pravatar.cc/150?img=15",
-      content:
-        "Security and compliance are critical in our industry. This platform not only meets but exceeds all our regulatory requirements.",
-      rating: 5,
-    },
-    {
-      name: "Maria Garcia",
-      role: "Director of Operations at StreamlineOps",
-      avatar: "https://i.pravatar.cc/150?img=17",
-      content:
-        "The customer support is phenomenal. Every question gets answered quickly and thoroughly. It's like having an extended team member.",
-      rating: 5,
-    },
-    {
-      name: "Kevin Lee",
-      role: "Founder at NextGen Solutions",
-      avatar: "https://i.pravatar.cc/150?img=19",
-      content:
-        "We've tried many platforms, but this one stands out for its reliability and performance. Zero downtime in 18 months of usage.",
-      rating: 5,
-    },
-    {
-      name: "Sophie Anderson",
-      role: "Product Lead at InnovateLab",
-      avatar: "https://i.pravatar.cc/150?img=21",
-      content:
-        "The analytics dashboard gives us insights we never had before. Data-driven decisions have become our competitive advantage.",
-      rating: 5,
-    },
-    {
-      name: "James Wilson",
-      role: "Engineering Manager at TechBridge",
-      avatar: "https://i.pravatar.cc/150?img=23",
-      content:
-        "Migration was seamless and the onboarding process was exceptional. Our team was productive from day one.",
-      rating: 5,
-    },
-    {
-      name: "Elena Petrov",
-      role: "CEO at GrowthMetrics",
-      avatar: "https://i.pravatar.cc/150?img=25",
-      content:
-        "The platform scales beautifully with our business. From startup to enterprise, it has grown with us every step of the way.",
-      rating: 5,
-    },
-    {
-      name: "Michael Chang",
-      role: "Head of Product at DataDriven",
-      avatar: "https://i.pravatar.cc/150?img=27",
-      content:
-        "Real-time collaboration features have transformed how our remote team works together. Productivity has increased dramatically.",
-      rating: 5,
-    },
   ];
 
   const StarIcon = () => (
