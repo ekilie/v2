@@ -6,11 +6,6 @@ The official landing page for Ekilie, showcasing our suite of advanced digital s
 
 - [About Ekilie](#about-ekilie)
 - [Our Solutions](#our-solutions)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## About Ekilie
 

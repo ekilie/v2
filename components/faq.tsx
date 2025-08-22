@@ -5,54 +5,53 @@ import { motion } from "framer-motion";
 export default function Faq() {
   const accordionItems = [
     {
-      title: "This template is Free?",
+      title: "What is ekiliSense?",
       content: (
         <div className="text-muted-foreground">
-          Yes, this template is free. You can use it for personal or commercial
-          purposes.
+          ekiliSense is an advanced sensing and monitoring platform that
+          captures real-time data from physical environments and transforms it
+          into actionable insights. It helps organizations improve efficiency,
+          safety, and decision-making.
         </div>
       ),
     },
     {
-      title: "There are more templates?",
+      title: "How does ekiliSense collect data?",
       content: (
         <div className="text-muted-foreground">
-          Yes, there are more templates available. You can find them here:{" "}
-          <a
-            href="https://x.com/gonzalochale"
-            target="_blank"
-            rel="noreferrer"
-            className="text-primary underline"
-          >
-            gonzalochale.dev
-          </a>
+          ekiliSense integrates with IoT sensors, edge devices, and existing
+          infrastructure. Data is securely transmitted and processed using
+          scalable cloud and edge computing pipelines.
         </div>
       ),
     },
     {
-      title: "How can I use this template?",
+      title: "Who can benefit from ekiliSense?",
       content: (
         <div className="text-muted-foreground">
-          You can use this template by cloning it from{" "}
-          <a
-            href="https://github.com/gonzalochale/nextui-saas-landing-template"
-            className="text-primary underline"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-          .
+          Industries such as smart cities, manufacturing, healthcare,
+          agriculture, and logistics benefit from ekiliSense by gaining
+          real-time visibility into their operations and assets.
         </div>
       ),
     },
     {
-      title: "How can I contribute to this template?",
+      title: "Can ekiliSense integrate with other platforms?",
       content: (
         <div className="text-muted-foreground">
-          You can contribute to this template by forking it on GitHub and
-          submitting a pull request. You can also report any issues or bugs you
-          encounter while using the template.
+          Yes. ekiliSense offers APIs and integration capabilities to connect
+          with ERP systems, cloud dashboards, and third-party analytics tools,
+          ensuring seamless adoption.
+        </div>
+      ),
+    },
+    {
+      title: "Is my data secure with ekiliSense?",
+      content: (
+        <div className="text-muted-foreground">
+          Absolutely. ekiliSense uses industry-standard encryption, role-based
+          access control, and compliance-ready data governance to protect your
+          information.
         </div>
       ),
     },
