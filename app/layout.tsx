@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "SaaS Landing Template",
-  description: "Landing Page template.",
+  title: "Ekilie - Pioneering Digital Innovation",
+  description: "Discover Ekilie's advanced digital solutions: ekiliSense, ekiliRelay, ekiliConvo, and Insights. Shaping the future with cutting-edge technology.",
 };
 
 export default function RootLayout({
