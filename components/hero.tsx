@@ -13,75 +13,87 @@ import { useDisclosure } from "@heroui/use-disclosure";
 import { Link } from "@heroui/link";
 import { BackgroundLines } from "@/components/ui/background-lines";
 
+const fadeUp = {
+  hidden: { y: 20, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.6, type: "spring" } },
+};
+
+const fadeIn = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 2, delay: 0.5, type: "spring" } },
+};
+
 export default function Hero() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   return (
-    <div className="relative justify-center items-center">
-      <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
-        <section className="max-w-screen-xl mx-auto px-4 py-28 gap-12 md:px-8 flex flex-col justify-center items-center">
+    <main className="relative flex justify-center items-center overflow-hidden">
+      <BackgroundLines className="flex flex-col items-center justify-center w-full px-4">
+        <section className="max-w-screen-xl mx-auto px-4 py-28 flex flex-col items-center text-center gap-8">
+          {/* Hero Content */}
           <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{
-              y: 0,
-              opacity: 1,
-            }}
-            transition={{ duration: 0.6, type: "spring", bounce: 0 }}
-            className="flex flex-col justify-center items-center space-y-5 max-w-4xl mx-auto text-center"
+            variants={fadeUp}
+            initial="hidden"
+            animate="visible"
+            className="flex flex-col items-center space-y-6 max-w-4xl"
           >
-            <span className="w-fit h-full text-sm bg-card px-2 py-1 border border-border rounded-full">
+            <span className="px-3 py-1 text-sm border border-border rounded-full bg-card">
               Digital Innovation
             </span>
-            <h1 className="text-4xl font-medium tracking-tighter mx-auto md:text-6xl text-pretty bg-gradient-to-b from-sky-800 dark:from-sky-100 to-foreground dark:to-foreground bg-clip-text text-transparent">
+
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-b from-sky-800/60 dark:from-sky-100/60 to-foreground bg-clip-text text-transparent">
               Building the Future
             </h1>
-            <p className="max-w-2xl text-lg mx-auto text-muted-foreground text-balance">
-              Ekilie creates smart digital solutions for tomorrow.
+
+            <p className="max-w-2xl text-lg text-muted-foreground">
+              Ekilie creates smart digital solutions that empower tomorrow.
             </p>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0"
-            >
-              <Button onPress={onOpen} color="primary" variant="shadow">
+
+            {/* Buttons + Modal */}
+            <motion.div whileHover={{ scale: 1.05 }} className="flex flex-col sm:flex-row gap-4">
+              <Button onPress={onOpen} color="primary" variant="shadow" aria-label="Explore our solutions">
                 Explore Our Solutions
               </Button>
-              <Modal
-                isOpen={isOpen}
-                placement="center"
-                onOpenChange={onOpenChange}
-              >
-                <ModalContent>
-                  <ModalHeader>Our Solutions</ModalHeader>
-                  <ModalBody>
-                    Ekilie delivers smart platforms for sensing, communication, and insights.
-                  </ModalBody>
-                  <ModalFooter>
-                    <Button
-                      as={Link}
-                      href="#products"
-                      color="primary"
-                      variant="solid"
-                      on={onOpenChange}
-                      size="sm"
-                    >
-                      Discover Products
-                    </Button>
-                  </ModalFooter>
-                </ModalContent>
-              </Modal>
             </motion.div>
           </motion.div>
         </section>
+
+        {/* Floating Glow Effect */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 0.5, type: "spring", bounce: 0 }}
-          className="w-full h-full absolute -top-32 flex justify-end items-center pointer-events-none "
+          variants={fadeIn}
+          initial="hidden"
+          animate="visible"
+          className="absolute inset-0 flex justify-end items-start pointer-events-none"
         >
           <div className="w-3/4 flex justify-center items-center">
-            <div className="w-12 h-[600px] bg-light blur-[70px] rounded-3xl max-sm:rotate-[15deg] sm:rotate-[35deg] [will-change:transform]"></div>
+            <div className="w-12 h-[600px] bg-light blur-[70px] rounded-3xl rotate-[30deg] sm:rotate-[35deg]" />
           </div>
         </motion.div>
       </BackgroundLines>
-    </div>
+
+      {/* Modal */}
+      <Modal isOpen={isOpen} placement="center" onOpenChange={onOpenChange}>
+        <ModalContent>
+          <ModalHeader className="text-xl font-semibold">Our Solutions</ModalHeader>
+          <ModalBody>
+            <p className="text-muted-foreground">
+              Ekilie delivers smart platforms for sensing, communication, and insights.
+            </p>
+          </ModalBody>
+          <ModalFooter>
+            <Button
+              as={Link}
+              href="#products"
+              color="primary"
+              variant="solid"
+              size="sm"
+              aria-label="Discover our products"
+            >
+              Discover Products
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </main>
   );
 }
