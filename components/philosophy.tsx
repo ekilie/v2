@@ -5,42 +5,48 @@ import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 export function Philosophy() {
   return (
-    <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
-      <GridItem
-        area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
-        icon={<Box className="h-4 w-4 text-black dark:text-neutral-400" />}
-        title="Empowering Creators"
-        description="Ekilie is built to help you create, collaborate, and innovate with ease—no matter your background or experience."
-      />
+    <section id="philosophy" className="py-24 px-4">
+      <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
+        <GridItem
+          area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
+          icon={<Box className="h-4 w-4 text-black dark:text-neutral-400" />}
+          title="Empowering Creators"
+          description="Ekilie is built to help you create, collaborate, and innovate with ease—no matter your background or experience."
+        />
 
-      <GridItem
-        area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
-        icon={<Settings className="h-4 w-4 text-black dark:text-neutral-400" />}
-        title="Seamless Customization"
-        description="Personalize your workflow and interface. Ekilie adapts to your needs, so you can focus on what matters most."
-      />
+        <GridItem
+          area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
+          icon={
+            <Settings className="h-4 w-4 text-black dark:text-neutral-400" />
+          }
+          title="Seamless Customization"
+          description="Personalize your workflow and interface. Ekilie adapts to your needs, so you can focus on what matters most."
+        />
 
-      <GridItem
-        area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
-        icon={<Lock className="h-4 w-4 text-black dark:text-neutral-400" />}
-        title="Privacy First"
-        description="Your data stays yours. Ekilie is designed with privacy and security at its core, for peace of mind."
-      />
+        <GridItem
+          area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
+          icon={<Lock className="h-4 w-4 text-black dark:text-neutral-400" />}
+          title="Privacy First"
+          description="Your data stays yours. Ekilie is designed with privacy and security at its core, for peace of mind."
+        />
 
-      <GridItem
-        area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
-        icon={<Sparkles className="h-4 w-4 text-black dark:text-neutral-400" />}
-        title="Intuitive Experience"
-        description="Enjoy a beautiful, accessible interface that shines in both light and dark mode—crafted for everyone."
-      />
+        <GridItem
+          area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
+          icon={
+            <Sparkles className="h-4 w-4 text-black dark:text-neutral-400" />
+          }
+          title="Intuitive Experience"
+          description="Enjoy a beautiful, accessible interface that shines in both light and dark mode—crafted for everyone."
+        />
 
-      <GridItem
-        area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
-        icon={<Search className="h-4 w-4 text-black dark:text-neutral-400" />}
-        title="Always Improving"
-        description="We listen, learn, and evolve. Ekilie grows with you, bringing new features and enhancements regularly."
-      />
-    </ul>
+        <GridItem
+          area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
+          icon={<Search className="h-4 w-4 text-black dark:text-neutral-400" />}
+          title="Always Improving"
+          description="We listen, learn, and evolve. Ekilie grows with you, bringing new features and enhancements regularly."
+        />
+      </ul>
+    </section>
   );
 }
 
