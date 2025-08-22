@@ -12,7 +12,7 @@ body {
     --background: #EEEEEC;
     --foreground: #131316;
     --muted-foreground: hsl(0, 0%, 41%);
-    --light: #5ba8ff;
+    --light: #22c55e;
     --card: #eaeaea;
     --border: #d5d5d5;
   }
@@ -21,7 +21,7 @@ body {
     --background: #131316;
     --foreground: #EEEEEC;
     --muted-foreground: #ABA9A3;
-    --light:#016FEE;
+    --light: #22c55e;
     --card: #1c1c1c;
     --border: #202020;
   }
