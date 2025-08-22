@@ -78,3 +78,24 @@ export const products = [
     isFeatured: false,
   },
 ];
+
+
+export const philosophy = [
+  {
+    name: "Innovation First",
+    desc: "We embrace bold ideas and pioneering technologies to create meaningful change.",
+  },
+  {
+    name: "Human-Centered Design",
+    desc: "Technology should serve people. Our solutions are built with empathy and usability in mind.",
+  },
+  {
+    name: "Integrity & Trust",
+    desc: "We believe in transparency, accountability, and building systems people can rely on.",
+  },
+  {
+    name: "Sustainable Impact",
+    desc: "Every solution we craft considers its long-term effect on communities and the environment.",
+  },
+];
+
