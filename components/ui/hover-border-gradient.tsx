@@ -35,17 +35,16 @@ export function HoverBorderGradient({
     return directions[nextIndex];
   };
 
+  // Use accent and neutral colors for gradients
   const movingMap: Record<Direction, string> = {
-    TOP: "radial-gradient(20.7% 50% at 50% 0%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
-    LEFT: "radial-gradient(16.6% 43.1% at 0% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
-    BOTTOM:
-      "radial-gradient(20.7% 50% at 50% 100%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
-    RIGHT:
-      "radial-gradient(16.2% 41.199999999999996% at 100% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+    TOP: "radial-gradient(20.7% 50% at 50% 0%, #CADCAE 0%, rgba(202,220,174,0) 100%)",
+    LEFT: "radial-gradient(16.6% 43.1% at 0% 50%, #CADCAE 0%, rgba(202,220,174,0) 100%)",
+    BOTTOM: "radial-gradient(20.7% 50% at 50% 100%, #CADCAE 0%, rgba(202,220,174,0) 100%)",
+    RIGHT: "radial-gradient(16.2% 41.2% at 100% 50%, #CADCAE 0%, rgba(202,220,174,0) 100%)",
   };
 
   const highlight =
-    "radial-gradient(75% 181.15942028985506% at 50% 50%, #3275F8 0%, rgba(255, 255, 255, 0) 100%)";
+    "radial-gradient(75% 181.16% at 50% 50%, #CADCAE 0%, rgba(202,220,174,0) 100%)";
 
   useEffect(() => {
     if (!hovered) {
@@ -62,14 +61,14 @@ export function HoverBorderGradient({
       }}
       onMouseLeave={() => setHovered(false)}
       className={cn(
-        "relative flex rounded-full border  content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
+        "relative flex rounded-full border content-center bg-white/80 hover:bg-accent/40 transition duration-500 dark:bg-zinc-900/80 dark:hover:bg-accent/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
         containerClassName
       )}
       {...props}
     >
       <div
         className={cn(
-          "w-auto text-white z-10 bg-black px-4 py-2 rounded-[inherit]",
+          "w-auto z-10 bg-white text-zinc-900 px-4 py-2 rounded-[inherit] dark:bg-zinc-900 dark:text-accent",
           className
         )}
       >
@@ -93,7 +92,7 @@ export function HoverBorderGradient({
         }}
         transition={{ ease: "linear", duration: duration ?? 1 }}
       />
-      <div className="bg-black absolute z-1 flex-none inset-[2px] rounded-[100px]" />
+      <div className="bg-white absolute z-1 flex-none inset-[2px] rounded-[100px] dark:bg-zinc-900" />
     </Tag>
   );
 }
