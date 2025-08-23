@@ -3,7 +3,13 @@ import React from "react";
 import { motion } from "motion/react";
 
 export default function ColourfulText({ text }: { text: string }) {
-  const colors = [
+  interface ColourfulTextProps {
+    text: string;
+  }
+
+  type Color = string;
+
+  const colors: Color[] = [
     // Accent and harmonious greens
     // "#CADCAE", // accent
     // "#A3B18A", // muted green
