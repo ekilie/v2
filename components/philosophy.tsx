@@ -8,15 +8,15 @@ import { TextRevealCard, TextRevealCardTitle, TextRevealCardDescription } from "
 export function Philosophy() {
   return (
     <section id="philosophy" className="py-24 px-4">
-      {/* <h1 className="text-2xl mb-6 md:text-5xl lg:text-7xl font-bold text-center relative z-2 font-sans">
+      <h1 className="text-2xl mb-6 md:text-5xl lg:text-7xl font-bold text-center relative z-2 font-sans">
         Our <ColourfulText text="Philosophy" /> <br />
-      </h1> */}
-          <div className="flex items-center justify-center h-[40rem] rounded-2xl w-full">
+      </h1>
+          {/* <div className="flex items-center justify-center h-[40rem] rounded-2xl w-full">
             <TextRevealCard
               text="You know the business"
               revealText="I know the chemistry "
             />
-          </div>
+          </div> */}
     <div className="max-w-6xl mx-auto">
         <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
           <GridItem

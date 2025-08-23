@@ -5,21 +5,21 @@ import { motion } from "motion/react";
 export default function ColourfulText({ text }: { text: string }) {
   const colors = [
     // Accent and harmonious greens
-    "#CADCAE", // accent
-    "#A3B18A", // muted green
-    "#6A994E", // deep green
-    "#B5C9B6", // soft green
-    // Muted teals and blue-greens
-    "#7CAFC4",
-    "#4F7CAC",
-    // Soft off-white for light pop
-    "#F5F7F8",
-    // Muted yellow for subtle highlight
-    "#E9EFC0",
-    // Muted blue for balance
-    "#A7C7E7",
-    // Muted purple for depth
-    "#B7AFC9",
+    // "#CADCAE", // accent
+    // "#A3B18A", // muted green
+    // "#6A994E", // deep green
+    // "#B5C9B6", // soft green
+    // // Muted teals and blue-greens
+    // "#7CAFC4",
+    // "#4F7CAC",
+    // // Soft off-white for light pop
+    // "#F5F7F8",
+    // // Muted yellow for subtle highlight
+    // "#E9EFC0",
+    // // Muted blue for balance
+    // "#A7C7E7",
+    // // Muted purple for depth
+    // "#B7AFC9",
   ];
 
   const [currentColors, setCurrentColors] = React.useState(colors);
