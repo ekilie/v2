@@ -35,24 +35,26 @@ export const testimonials = [
 export const products = [
   {
     name: "ekiliSense",
-    desc: "Advanced sensing and monitoring solutions",
+    desc: "AI automated school managament system",
     features: [
       "Real-time data collection",
       "Intelligent analytics",
       "Actionable insights",
       "Seamless integration",
     ],
+    link: "https://sense.ekilie.com",
     isFeatured: false,
   },
   {
     name: "ekiliRelay",
-    desc: "Seamless communication and relay systems",
+    desc: "Open email and sms sending API",
     features: [
       "High-performance relay",
       "Modern digital infrastructure",
       "Scalable architecture",
       "Reliable connectivity",
     ],
+    link: "https://relay.ekilie.com",
     isFeatured: false,
   },
   {
@@ -64,6 +66,7 @@ export const products = [
       "Multi-platform support",
       "Advanced conversation flow",
     ],
+    link: "https://convo.ekilie.com",
     isFeatured: false,
   },
   {
@@ -75,10 +78,10 @@ export const products = [
       "Custom reporting",
       "Predictive analytics",
     ],
+    link: "https://insights.ekilie.com",
     isFeatured: false,
   },
 ];
-
 
 export const philosophy = [
   {
@@ -98,4 +101,3 @@ export const philosophy = [
     desc: "Every solution we craft considers its long-term effect on communities and the environment.",
   },
 ];
-

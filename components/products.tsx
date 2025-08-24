@@ -4,9 +4,9 @@ import { Button } from "@heroui/button";
 import { Divider } from "@heroui/divider";
 import { motion } from "framer-motion";
 import { products } from "@/lib/utils";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 export default function Products() {
-
   return (
     <motion.section
       id="products"
@@ -28,7 +28,8 @@ export default function Products() {
             Our Digital Solutions
           </h2>
           <p className="mx-auto max-w-xl text-muted-foreground text-center">
-            Discover our suite of innovative products designed to transform tomorrow&apos;s technology.
+            Discover our suite of innovative products designed to transform
+            tomorrow&apos;s technology.
           </p>
         </motion.div>
 
@@ -49,6 +50,7 @@ export default function Products() {
                 <CardBody className="w-full flex items-start gap-3">
                   <div className="flex flex-col w-full">
                     <h4 className="text-xl font-light">{item.name}</h4>
+                    
                     <span className="text-muted-foreground text-sm font-light">
                       {item.desc}
                     </span>
@@ -75,7 +77,12 @@ export default function Products() {
                     variant="solid"
                     color={item.isFeatured ? "primary" : "default"}
                   >
-                    Learn More
+                    <LinkPreview
+                      url="https://ekilie.com"
+                      className="font-bold bg-clip-text text-transparen"
+                    >
+                      Learn More
+                    </LinkPreview>
                   </Button>
                 </CardFooter>
               </div>
