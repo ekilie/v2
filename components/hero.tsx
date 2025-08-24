@@ -41,15 +41,15 @@ export default function Hero() {
             animate="visible"
             className="flex flex-col items-center space-y-6 max-w-4xl"
           >
-            <HoverBorderGradient
+            {/* <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"
               className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
             >
+            </HoverBorderGradient> */}
+              <span className="px-3 py-1 text-sm border border-border rounded-full bg-card">
                 Digital Innovation
-              {/* <span className="px-3 py-1 text-sm border border-border rounded-full bg-card">
-              </span> */}
-            </HoverBorderGradient>
+              </span>
 
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-b from-sky-800/10 dark:from-sky-100/10 to-foreground bg-clip-text text-transparent">
               Building the Future
