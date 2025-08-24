@@ -50,7 +50,7 @@ export default function Products() {
                 <CardBody className="w-full flex items-start gap-3">
                   <div className="flex flex-col w-full">
                     <h4 className="text-xl font-light">{item.name}</h4>
-                    
+
                     <span className="text-muted-foreground text-sm font-light">
                       {item.desc}
                     </span>
@@ -73,12 +73,12 @@ export default function Products() {
                 </CardBody>
                 <CardFooter className="p-0">
                   <Button
-                    className="w-full"
+                    color="primary"
                     variant="solid"
-                    color={item.isFeatured ? "primary" : "default"}
+                    className="w-full"
                   >
                     <LinkPreview
-                      url="https://ekilie.com"
+                      url={item.link}
                       className="font-bold bg-clip-text text-transparen"
                     >
                       Learn More
