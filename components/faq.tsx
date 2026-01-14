@@ -5,53 +5,50 @@ import { motion } from "framer-motion";
 export default function Faq() {
   const accordionItems = [
     {
-      title: "What is ekiliSense?",
+      title: "How does Ekilie vet developers?",
       content: (
         <div className="text-muted-foreground">
-          ekiliSense is an advanced sensing and monitoring platform that
-          captures real-time data from physical environments and transforms it
-          into actionable insights. It helps organizations improve efficiency,
-          safety, and decision-making.
+          Every developer goes through a rigorous screening process including technical assessments, portfolio review, reference checks, and culture fit interviews. We only accept the top 3% of applicants to ensure quality.
         </div>
       ),
     },
     {
-      title: "How does ekiliSense collect data?",
+      title: "What types of engagement are available?",
       content: (
         <div className="text-muted-foreground">
-          ekiliSense integrates with IoT sensors, edge devices, and existing
-          infrastructure. Data is securely transmitted and processed using
-          scalable cloud and edge computing pipelines.
+          We offer flexible engagement models including full-time, part-time, contract, and freelance arrangements. You can hire developers for short-term projects or long-term partnerships based on your needs.
         </div>
       ),
     },
     {
-      title: "Who can benefit from ekiliSense?",
+      title: "How quickly can I get matched with a developer?",
       content: (
         <div className="text-muted-foreground">
-          Industries such as smart cities, manufacturing, healthcare,
-          agriculture, and logistics benefit from ekiliSense by gaining
-          real-time visibility into their operations and assets.
+          We typically match clients with qualified developers within 48 hours of receiving your requirements. Once matched, developers can start onboarding immediately or based on their availability.
         </div>
       ),
     },
     {
-      title: "Can ekiliSense integrate with other platforms?",
+      title: "What technologies do your developers specialize in?",
       content: (
         <div className="text-muted-foreground">
-          Yes. ekiliSense offers APIs and integration capabilities to connect
-          with ERP systems, cloud dashboards, and third-party analytics tools,
-          ensuring seamless adoption.
+          Our network includes experts in React, React Native, Node.js, TypeScript, Next.js, GraphQL, PostgreSQL, MongoDB, AWS, and many other modern technologies. We carefully match developers based on your specific tech stack requirements.
         </div>
       ),
     },
     {
-      title: "Is my data secure with ekiliSense?",
+      title: "How does remote collaboration work?",
       content: (
         <div className="text-muted-foreground">
-          Absolutely. ekiliSense uses industry-standard encryption, role-based
-          access control, and compliance-ready data governance to protect your
-          information.
+          Our developers are experienced in remote work with strong communication skills. They use modern collaboration tools like Slack, GitHub, and video conferencing. We ensure there&apos;s sufficient timezone overlap for real-time collaboration when needed.
+        </div>
+      ),
+    },
+    {
+      title: "What if I'm not satisfied with a developer?",
+      content: (
+        <div className="text-muted-foreground">
+          We offer a satisfaction guarantee. If you&apos;re not happy with a developer within the first two weeks, we&apos;ll find you a replacement at no additional cost. Your success is our priority.
         </div>
       ),
     },
