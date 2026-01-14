@@ -7,6 +7,7 @@ import Products from "@/components/products";
 import Faq from "@/components/faq";
 import Footer from "@/components/footer";
 import {Philosophy} from "@/components/philosophy";
+import TestimonialsSection from "@/components/testimonials-section";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Hero />
       {/* <Partners /> */}
       <Philosophy />
-      {/* <Testimonials /> */}
+      <TestimonialsSection />
       {/* <Stats /> */}
       <Products />
       <Faq />

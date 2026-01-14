@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
+import { Box, Lock, Search, Settings, Sparkles, Globe } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import ColourfulText from "@/components/ui/colourful-text";
 
@@ -8,49 +8,43 @@ export function Philosophy() {
   return (
     <section id="philosophy" className="py-24 px-4">
       <h1 className="text-2xl mb-6 md:text-5xl lg:text-7xl font-bold text-center relative z-2 font-sans">
-        Our <ColourfulText text="Philosophy" /> <br />
+        Our <ColourfulText text="Remote-First" /> Philosophy <br />
       </h1>
-          {/* <div className="flex items-center justify-center h-[40rem] rounded-2xl w-full">
-            <TextRevealCard
-              text="You know the business"
-              revealText="I know the chemistry "
-            />
-          </div> */}
     <div className="max-w-6xl mx-auto">
         <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
           <GridItem
             area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
-            icon={<Box className="h-4 w-4  dark:text-neutral-400" />}
-            title="Engineering Excellence"
-            description="We deliver robust, scalable software solutions built with precision and attention to detail—transforming complex challenges into elegant systems."
+            icon={<Globe className="h-4 w-4  dark:text-neutral-400" />}
+            title="100% Remote, Always"
+            description="We believe the best talent exists everywhere. Our fully distributed team works from locations around the world, bringing diverse perspectives to every project."
           />
 
           <GridItem
             area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
             icon={<Settings className="h-4 w-4  dark:text-neutral-400" />}
-            title="Systems Thinking"
-            description="Our holistic approach to systems development ensures seamless integration, optimal performance, and long-term maintainability."
+            title="Async-First Communication"
+            description="We embrace asynchronous workflows that respect time zones and deep work. Clear documentation and thoughtful communication are our foundation."
           />
 
           <GridItem
             area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
-            icon={<Lock className="h-4 w-4  dark:text-neutral-400" />}
-            title="Privacy First"
-            description="Your data stays yours. Ekilie is designed with privacy and security at its core, for peace of mind."
+            icon={<Box className="h-4 w-4  dark:text-neutral-400" />}
+            title="Engineering Excellence"
+            description="Remote doesn't mean compromise. We deliver robust, scalable solutions built with precision—transforming complex challenges into elegant systems."
           />
 
           <GridItem
             area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
             icon={<Sparkles className="h-4 w-4  dark:text-neutral-400" />}
-            title="Intuitive Experience"
-            description="Enjoy a beautiful, accessible interface that shines in both light and dark mode—crafted for everyone."
+            title="Work-Life Balance"
+            description="Freedom to work from anywhere means our developers are happier, healthier, and more productive. We prioritize well-being alongside delivery."
           />
 
           <GridItem
             area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
-            icon={<Search className="h-4 w-4  dark:text-neutral-400" />}
-            title="Continuous Innovation"
-            description="We stay ahead of the curve with cutting-edge technologies and methodologies, continuously improving our systems and solutions."
+            icon={<Lock className="h-4 w-4  dark:text-neutral-400" />}
+            title="Trust & Transparency"
+            description="Our remote culture is built on trust. We value results over hours, transparency over surveillance, and autonomy over micromanagement."
           />
         </ul>
       </div>

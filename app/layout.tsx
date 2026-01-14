@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Ekilie - Pioneering Digital Innovation",
-  description: "Discover Ekilie's advanced digital solutions: ekiliSense, ekiliRelay, ekiliConvo, and Insights. Shaping the future with cutting-edge technology.",
+  title: "Ekilie - Fully Remote Development Company",
+  description: "Connect with top remote developers specializing in React, React Native, Node.js, and more. A fully remote software development company delivering world-class talent and solutions.",
 };
 
 export default function RootLayout({

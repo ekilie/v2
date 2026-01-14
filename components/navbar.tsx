@@ -30,8 +30,11 @@ export default function NavBar() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   
   const menuItems = [
+    { name: "Find Developers", href: "/find-developers" },
+    { name: "Join Team", href: "/join-team" },
+    { name: "How It Works", href: "/how-it-works" },
+    { name: "About Remote", href: "/about-remote" },
     { name: "Products", href: "#products" },
-    { name: "Testimonials", href: "#testimonials" },
   ];
 
   return (
@@ -59,13 +62,13 @@ export default function NavBar() {
           </a>
         </NavbarBrand>
         <NavbarItem>
-          <Button as={Link} href="#products" variant="light" size="sm">
-            Products
+          <Button as={Link} href="/find-developers" variant="light" size="sm">
+            Find Developers
           </Button>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} href="#testimonials" variant="light" size="sm">
-            Testimonials
+          <Button as={Link} href="/join-team" variant="light" size="sm">
+            Join Team
           </Button>
         </NavbarItem>
         <NavbarItem>
@@ -76,43 +79,42 @@ export default function NavBar() {
                 variant="light"
                 size="sm"
               >
-                Ekilie Solutions
+                About
               </Button>
             </DropdownTrigger>
             <DropdownMenu
-              aria-label="Ekilie solutions"
+              aria-label="About menu"
               className="w-[340px]"
               itemClasses={{
                 base: "gap-4",
               }}
             >
               <DropdownItem
-                key="ekilisense"
-                description="Advanced sensing and monitoring solutions that transform data into actionable insights."
+                key="how-it-works"
+                description="Learn how we connect clients with top remote developers"
                 startContent={<TimerIcon />}
+                as={Link}
+                href="/how-it-works"
               >
-                ekiliSense
+                How It Works
               </DropdownItem>
               <DropdownItem
-                key="ekilirelay"
-                description="Seamless communication and relay systems for modern digital infrastructure."
-                startContent={<TimerIcon />}
-              >
-                ekiliRelay
-              </DropdownItem>
-              <DropdownItem
-                key="ekiliconvo"
-                description="Intelligent conversation and interaction platforms for enhanced user engagement."
-                startContent={<PersonIcon />}
-              >
-                ekiliConvo
-              </DropdownItem>
-              <DropdownItem
-                key="insights"
-                description="Comprehensive analytics and insights to drive data-driven decision making."
+                key="about-remote"
+                description="Our remote-first culture and philosophy"
                 startContent={<GlobeIcon />}
+                as={Link}
+                href="/about-remote"
               >
-                Insights
+                Remote Culture
+              </DropdownItem>
+              <DropdownItem
+                key="products"
+                description="Explore our software solutions"
+                startContent={<PersonIcon />}
+                as={Link}
+                href="/#products"
+              >
+                Our Products
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>

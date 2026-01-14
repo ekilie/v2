@@ -48,15 +48,15 @@ export default function Hero() {
             >
             </HoverBorderGradient> */}
               <span className="px-3 py-1 text-sm border border-border rounded-full bg-card">
-                Software Engineering & Systems Development
+                🌍 Fully Remote Development Company
               </span>
 
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-b from-sky-800/10 dark:from-sky-100/10 to-foreground bg-clip-text text-transparent">
-              Engineering Excellence, Building Tomorrow
+              World-Class Remote Developers,<br />Ready to Build Your Vision
             </h1>
 
             <p className="max-w-2xl text-lg text-muted-foreground">
-              Ekilie is a software engineer and systems development company that creates innovative digital solutions for modern businesses.
+              Connect with expert developers specializing in React, React Native, Node.js, and modern web technologies. 100% remote, globally distributed, delivering excellence.
             </p>
 
             {/* Buttons + Modal */}
@@ -65,12 +65,21 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Button
-                onPress={onOpen}
+                as={Link}
+                href="/find-developers"
                 color="primary"
                 variant="shadow"
-                aria-label="Explore our solutions"
+                aria-label="Find developers"
               >
-                Explore Our Solutions
+                Find Developers
+              </Button>
+              <Button
+                as={Link}
+                href="/join-team"
+                variant="bordered"
+                aria-label="Join our team"
+              >
+                Join Our Team
               </Button>
             </motion.div>
           </motion.div>
@@ -93,23 +102,23 @@ export default function Hero() {
       <Modal isOpen={isOpen} placement="center" onOpenChange={onOpenChange}>
         <ModalContent>
           <ModalHeader className="text-xl font-semibold">
-            Our Engineering Solutions
+            Remote Development Excellence
           </ModalHeader>
           <ModalBody>
             <p className="text-muted-foreground">
-              As a software engineering and systems development company, Ekilie delivers cutting-edge platforms for sensing, communication, analytics, and intelligent automation.
+              As a fully remote development company, Ekilie connects top-tier developers with innovative companies worldwide. Our team specializes in React, React Native, Node.js, and cutting-edge web technologies.
             </p>
           </ModalBody>
           <ModalFooter>
             <Button
               as={Link}
-              href="#products"
+              href="/find-developers"
               color="primary"
               variant="solid"
               size="sm"
-              aria-label="Discover our products"
+              aria-label="Find developers"
             >
-              Discover Products
+              Find Developers
             </Button>
           </ModalFooter>
         </ModalContent>
